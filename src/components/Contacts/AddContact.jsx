@@ -6,11 +6,12 @@ import styles from "./AddContact.module.css";
 const AddContact = (props) => {
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
-
   const getNameHandler = (e) => setName(e.target.value);
   const getTelHandler = (e) => setTel(e.target.value);
   const saveDataHandler = (e) => {
     e.preventDefault();
+    if (name.trim() === "" || tel.trim() === "") return;
+
     props.addPerson({ name: name, tel: tel });
     setName("");
     setTel("");
@@ -26,8 +27,8 @@ const AddContact = (props) => {
       />
       <input
         type={"tel"}
-        // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-        placeholder="Phone Number"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="Phone Number e.g 444-555-6789"
         value={tel}
         onChange={getTelHandler}
       />

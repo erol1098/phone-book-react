@@ -28,7 +28,9 @@ const FilteredContent = (props) => {
               const { name, tel } = person;
               return (
                 <li key={tel}>
-                  <span>{name}</span>
+                  <span>
+                    {name.replace(name[0], name[0].toLocaleUpperCase())}
+                  </span>
                   <span>{tel}</span>
                 </li>
               );
