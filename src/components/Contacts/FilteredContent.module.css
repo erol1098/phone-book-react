@@ -1,3 +1,11 @@
+.filter {
+  width: 30vw;
+  margin: 0 auto;
+  height: 1.5rem;
+  text-indent: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid grey;
+}
 .content {
   width: 30vw;
   box-shadow: 0 0 3px #000;
@@ -7,7 +15,9 @@
   text-align: center;
   margin-bottom: 0.5rem;
 }
-
+.content ul {
+  margin-top: 0.5rem;
+}
 .content ul li {
   text-align: start;
   display: flex;
