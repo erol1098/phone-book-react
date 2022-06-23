@@ -1,0 +1,8 @@
+.filter {
+  width: 30vw;
+  margin: 0 auto;
+  height: 1.5rem;
+  text-indent: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid grey;
+}

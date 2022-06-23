@@ -1,0 +1,8 @@
+.button {
+  width: 20%;
+  padding: 0.5rem;
+  color: white;
+  background-color: coral;
+  border: none;
+  border-radius: 0.5rem;
+}
