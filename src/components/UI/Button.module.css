@@ -1,8 +1,12 @@
 .button {
-  width: 20%;
+  width: 40%;
   padding: 0.5rem;
   color: white;
-  background-color: coral;
+  background-color: #f26100;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+.button:hover {
+  transform: scale(1.01);
 }

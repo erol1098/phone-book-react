@@ -12,6 +12,7 @@ const App = () => {
 
   return (
     <Card>
+      <h1>Contacts</h1>
       <FilteredContent phoneBook={phoneBook} />
       <AddContact addPerson={addPhoneBookHandler} />
     </Card>

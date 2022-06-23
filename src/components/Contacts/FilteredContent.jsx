@@ -17,8 +17,6 @@ const FilteredContent = (props) => {
         onChange={enterFilterHandler}
       />
       <section className={styles.content}>
-        <h3>Phone Book</h3>
-        <hr />
         <ul>
           {props.phoneBook
             .filter((person) =>

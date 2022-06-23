@@ -1,14 +1,13 @@
 .filter {
   width: 30vw;
   margin: 0 auto;
-  height: 1.5rem;
+  height: 2rem;
   text-indent: 1rem;
   border-radius: 0.3rem;
   border: 1px solid grey;
 }
 .content {
   width: 30vw;
-  box-shadow: 0 0 3px #000;
   padding: 0.5rem;
 }
 .content h3 {
@@ -19,8 +18,18 @@
   margin-top: 0.5rem;
 }
 .content ul li {
+  background-color: #f2e6df;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.1rem;
   text-align: start;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.content ul li:hover {
+  /* transform: scale(1.1); */
+  transform: translate(0.3rem, -0.3rem);
 }
