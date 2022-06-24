@@ -9,7 +9,20 @@
 .form input {
   align-self: stretch;
   height: 2rem;
-  text-indent: 1rem;
+  text-indent: 2rem;
   border-radius: 0.3rem;
   border: 1px solid grey;
+}
+
+.name-input::placeholder {
+  background-image: url("../../assets/person.svg");
+  background-repeat: no-repeat;
+  background-position: 2%;
+  padding-left: 1rem;
+}
+.tel-input::placeholder {
+  background-image: url("../../assets/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 2%;
+  padding-left: 1rem;
 }

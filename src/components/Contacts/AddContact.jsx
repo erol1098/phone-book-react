@@ -20,12 +20,14 @@ const AddContact = (props) => {
   return (
     <form className={styles.form} onSubmit={saveDataHandler}>
       <input
+        className={styles["name-input"]}
         type="text"
         placeholder="Name"
         value={name}
         onChange={getNameHandler}
       />
       <input
+        className={styles["tel-input"]}
         type={"tel"}
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         placeholder="Phone Number e.g 444-555-6789"

@@ -2,7 +2,7 @@
   width: 30vw;
   margin: 0 auto;
   height: 2rem;
-  text-indent: 1rem;
+  text-indent: 2rem;
   border-radius: 0.3rem;
   border: 1px solid grey;
 }
@@ -32,4 +32,10 @@
 .content ul li:hover {
   /* transform: scale(1.1); */
   transform: translate(0.3rem, -0.3rem);
+}
+.filter::placeholder {
+  background-image: url("../../assets/search.svg");
+  background-repeat: no-repeat;
+  background-position: 2%;
+  padding-left: 1rem;
 }
